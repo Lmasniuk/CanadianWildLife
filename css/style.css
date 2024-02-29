@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@variables {
+	var-primaryColor1: #000;
+	var-primaryColor2: #000;
+	var-primaryColor3: #000;
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans|Lobster|Cantarell|Droid+Serif);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+
+html{ padding: 0; margin: 0;}
+body{ padding: 0; margin: 0;
+    font-family: 'Droid Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {font-family: Lobster, sans-serif; color: #333;}
+h1 { font-size: 5em; margin: .67em 0 }
+h2 { font-size: 2.25em; margin: .75em 0 }
+h3 { font-size: 1.75em; margin: .83em 0 }
+
+.mainContent {
+	width:50%;
+	margin: 0 auto;
+}
+
+
+a {
+    color: #39F;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration: underline;           }
+
+.searchBar {font-family: Lobster, sans-serif; color: #333; font-size: 2em; text-align: center;}
+
+.browser a{font-family: Lobster, sans-serif; color: #333; font-size: 2em;}
+
+
+#background {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    position: relative;
+    z-index: 0;
+}
+
+#background img {
+    visibility: visible;
+}
+
+
+
+
+.fusionLink, .fusionButton{
+    font-family: 'Droid Sans', sans-serif;
+    display: inline-block;
+    padding: 5px 10px 6px;
+    color: #fff;
+
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    cursor: pointer;
+}
+
+.fusionButton {
+    border-radius: 10px;
+}
+
+
+.small.fusionLink {
+    font-size: 11px;
+}
+.medium.fusionLink {
+    font-size: 13px;
+}
+.large.fusionLink, .large.fusionButton {
+    font-size: 22px;
+    padding: 8px 14px 9px;
+}
+
+/* Colors ---------- */
+
+
+.fusionLink.blue, .fusionButton.blue {
+    background-color: #00AEEF;
+}
+.fusionLink.blue:hover, .fusionLink.blue:focus, .fusionButton.blue:hover, .fusionButton.blue:focus {
+    background-color: #3CF;
+    text-decoration:none;
+    color:#FFF;
+}
+.fusionLink.white, fusionButton.white {
+    color: #39F;
+    background-color: #FFF;
+}
+.fusionLink.white:hover, .fusionLink.white:focus, .fusionButton.white:hover, .fusionButton.white:focus {
+    background-color: #3CF;
+    text-decoration:none;
+    color:#FFF;
+}
+
+
+.fusionStyle.footer {
+    position:fixed;top: auto; bottom:0; width:100%; padding:20px; background-color:#FFF;
+}
+
+
+
+/*
+address, article, aside, audio, blockquote, canvas, dd, div, dl, fieldset, figcaption,figure,footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, noscript, ol, output, p, pre, section, table, tfoot, ul, video
+
+b, big, i, small, tt, abbr, acronym, cite, code, dfn, em, kbd, strong, samp, var, a, bdo, br, img, map, object, q, script, span, sub, sup, button, input, label, select, textarea
+*/
+
+
+.dropList {
+}
+.dropList a{
+    width:100%;
+    font-size:32px;
+    padding-top: 15px;
+    padding-bottom:15px;
+
+}
+
+
+
+/**
+* Alignment Interface defines the classes align-left, align-center and, align-right for all
+* html elements.
+* For Inline Elements, apply the class to the element itself and it will align the
+* content inside of it.
+* For Block Elements, apply the class to the element itself and it will align the element
+* relitive to its container.
+*
+*/
+
+
+
+
+
+.align-left, .align-center, .align-right {
+    display:block;
+
+}
+.align-left > *, .align-center > *, .align-right > * {
+    margin:0, auto, 0, 0;
+    text-align:right;
+}
+.align-left {
+    margin:0 auto 0 0;
+    text-align:left;
+}
+.align-center {
+	width:50%;
+    margin:0 auto 0 auto;
+    text-align:center;
+}
+.align-right {
+    margin:0 0 0 auto;
+    text-align:right;
+}
+
+
+
+
+

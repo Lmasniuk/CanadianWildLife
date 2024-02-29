@@ -1,0 +1,83 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>WildLife</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript">
+
+        function redirectTo(sUrl) {
+            window.location=sUrl;
+        }
+
+
+        function searchIt() {
+
+            // srchVal is used to hold the string value that the user input into the search bar.
+            var srchVal =  document.getElementById('animalQry').value.toUpperCase();
+
+
+            //if the user enters the exact string value of an animal name, an alert is sent and the user is redirected to the animals page.
+            switch(srchVal){
+
+                case 'WHOOPING CRANE':
+                    alert("Redirecting to the Whooping Crane Page");
+                    redirectTo("html/whoopCrane.html");
+                    break;
+                case 'BOWHEAD WHALE':
+                    alert("Redirecting to the Bowhead Whale Page");
+                    redirectTo("html/BowheadWhale.html");
+                    break;
+                case 'WOOD BISON':
+                    alert("Redirecting to the Wood Bison Page");
+                    redirectTo("html/woodBison.html");
+                    break;
+                case 'SEA OTTER':
+                    alert("Redirecting to the Sea Otter Page");
+                    redirectTo("html/seaOtter.html");
+                    break;
+                case 'POLAR BEAR':
+                    alert("Redirecting to the Polar Bear Page");
+                    redirectTo("html/polarBear.html");
+                    break;
+                case 'KILLER WHALE':
+                    alert("Redirecting to the Killer Whale Page");
+                    redirectTo("html/killerWhale.html");
+                    break;
+                default:
+                    alert("Sorry, your search did not match any of the animals in the database.\n Please try again or browse for the animal you are looking for.");
+            }
+         }
+    </script>
+</head>
+
+<body>
+<h1 class="align-center">WildLife</h1>
+
+<form>
+    <div class="searchBar">
+        Search: <input id="animalQry" class="searchBox" type="text" name="animalQry">
+        <input type="button" value="Search" onclick="searchIt();" />
+    </div>
+</form>
+<div class="browser align-center"><a href="html/animalIndex.html">Browse Animals</a></div>
+<br />
+<br />
+<br />
+
+<div class="mainContent"><p class="theContent align-center">
+    This website is host to a wonderful application that allows users to browse, search and examine different endangered Canadian species. Please feel free to browse, or search for a particular animal that you want to learn about.
+    <br />
+</p>
+</div>
+
+<div style="height:50px;"></div>
+<div class="align-center fusionStyle footer">
+    <a href="http://www.wwf.ca/donate/" class="fusionButton blue large">Donate to WWF &nbsp;<img src="pictures/WWF_logo.png" style="height:1em;"></a>
+    <a href="html/aboutMe.html" class="fusionButton white blue large" style="font-weight: bold;">App info</a>
+</div>
+
+</body>
+</html>
